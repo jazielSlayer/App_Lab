@@ -1,0 +1,34 @@
+@api = http://localhost:3000/prestamos
+
+GET {{api}}
+
+
+###
+GET {{api}}/1
+
+###
+GET {{api}}/count
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "usuario_id": 1,
+    "equipo_id": 1,
+    "fecha_prestamo": "2023-10-01",
+    "fecha_devolucion": "2023-10-15",
+    "estado": "devuelto",
+    "notas": "Devolución en buen estado"
+}
+
+###
+DELETE {{api}}/1
+
+###
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "nombre": "maria"
+}
